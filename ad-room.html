@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin-Add room</title>
+
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Import lib -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-free-6.1.1-web/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ad-room.css">
+	<script src="ad-room.js"></script>
+	<!-- End import lib -->
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="./ad-style.css"> -->
+</head>
+<body class="overlay-scrollbar">
+	<!-- navbar -->
+	<div class="navbar">
+		<!-- nav left -->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fas fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<img src="https://luxuryresort.webhotel.vn/files/images/comment/luxury-resort-logo.png" alt="luxury Resort" class="logo logo-dark">
+			</li>
+		</ul>
+		<!-- end nav left -->
+		<!-- form -->
+		<form class="navbar-search">
+			<input type="text" name="Search" class="navbar-search-input" placeholder="What you looking for...">
+			<i class="fas fa-search"></i>
+		</form>
+		<!-- end form -->
+		<!-- nav right -->
+		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<!-- <a class="nav-link" href="#" onclick="switchTheme()"> -->
+					<!-- <i class="fas fa-moon dark-icon"></i> -->
+				</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link">
+					<i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
+					<span class="navbar-badge">17</span>
+				</a>
+				<ul id="notification-menu" class="dropdown-menu notification-menu">
+					<div class="dropdown-menu-header">
+						<span>
+							Notifications
+						</span>
+					</div>
+					<div class="dropdown-menu-content overlay-scrollbar scrollbar-hover">
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-gift"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-tasks"></i>
+								</div>
+								<span>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+									<br>
+									<span>
+										15/07/2020
+									</span>
+								</span>
+							</a>
+						</li>
+					</div>
+					<div class="dropdown-menu-footer">
+						<span>
+							View all notifications
+						</span>
+					</div>
+				</ul>
+			</li>
+			<li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+					<!-- tao avatar -->
+					<img src="./pic/anh the p2 (5).png" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
+					<ul id="user-menu" class="dropdown-menu">
+						<li  class="dropdown-menu-item">
+							<a href="ad-profile.html" class="dropdown-menu-link">
+								<div>
+									<i class="fa-solid fa-address-card"></i>
+								</div>
+								<span>Profile</span>
+							</a>
+						</li>
+						<li class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-cog"></i>
+								</div>
+								<span>Settings</span>
+							</a>
+						</li>
+						<li  class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="far fa-credit-card"></i>
+								</div>
+								<span>Payments</span>
+							</a>
+						</li>
+						<li  class="dropdown-menu-item">
+							<a href="#" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-spinner"></i>
+								</div>
+								<span>Projects</span>
+							</a>
+						</li>
+						<li  class="dropdown-menu-item">
+							<!-- link trang log in vào đây -->
+							<a href="login.html" class="dropdown-menu-link">
+								<div>
+									<i class="fas fa-sign-out-alt"></i>
+								</div>
+								<span>Logout</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<!-- end nav right -->
+	</div>
+	<!-- end navbar -->
+	<!-- sidebar -->
+	<div class="sidebar">
+		<ul class="sidebar-nav">
+			<li class="sidebar-nav-item">
+				<a href="ad-index.html" class="sidebar-nav-link ">
+					<div>
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<span>
+						Dashboard
+					</span>
+				</a>
+			</li>
+			<li class="sidebar-nav-item">
+				<a href="ad-profile.html" class="sidebar-nav-link ">
+					<div>
+						<i class="fa-solid fa-address-card"></i>
+					</div>
+					<span>Profile</span>
+				</a>
+			</li>
+
+			<li  class="sidebar-nav-item">
+				<a href="./ad-room.html" class="sidebar-nav-link active">
+					<div>
+						<i class="fa-solid fa-hotel"></i>
+					</div>
+					<span>Room</span>
+				</a>
+			</li>
+
+			<li  class="sidebar-nav-item">
+				<a href="./ad-customer.html" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-users-line"></i>
+					</div>
+					<span> Customer </span>
+				</a>
+			</li>
+
+			<li  class="sidebar-nav-item">
+				<a href="index.html" target="_blank" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<span>Luxury resort</span>
+				</a>
+			</li>
+			
+			<li  class="sidebar-nav-item">
+				<a href="#" class="sidebar-nav-link">
+					<div>
+						<i class="fa-solid fa-circle-info"></i>
+					</div>
+					<span>Help</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<!-- main content -->
+            <!-- <div class="them-moi-san-pham">
+				<form onsubmit="return taosanpham()"method="POST" autocomplete="on" name="contactForm"> 
+					<input type="text" id="maphong" placeholder="ma phong" required >
+					<input type="text" id="tenphong" placeholder="Tên phong" required>                 
+					<input type="text" id="hinhanh"required placeholder="hinh anh" >          
+					<input type="text" id="size" placeholder="size" >           
+					<input type="text" id="gia" placeholder="Giá">           
+				   <button type="submit" style="cursor: pointer;">Tạo</button>
+				</form>
+			   </div> -->
+
+    <div class="wrapper">
+        <div class="row-room">
+            <table border="1" cellpadding="8" class="left">
+                <tbody class="them-moi-san-pham">
+                    <tr>
+                        <td>Mã phòng</td>
+                        <td colspan="3"><input type="text" id="maphong"> </td>
+                    </tr>
+                    <tr>
+                        <td>Tên phòng</td>
+                        <td colspan="3"><input type="text" id="tenphong"> </td>
+                    </tr>
+                    <tr>
+                        <td>Hình ảnh</td>
+                        
+                        <td colspan="3"><input type="text" id="hinhanh"> </td>
+                    </tr>
+                    <tr>
+                        <td>Size (m<sup>2</sup> )</td>
+                        <td colspan="3"><input type="number" id="size"> </td>
+                    </tr>
+                    <tr>
+                        <td>Giá</td>
+                        <td colspan="3"><input type="number" id="gia"> </td>
+                    </tr>
+                    
+                    
+        
+                    <tr align="center">
+                        <td colspan="4">
+                            <button class="but-add" onclick="Add()">Add</button>
+                            <button class="but-add" onclick="taosanpham()">Tao</button>
+                            <button class="but-edit" onclick="Edit()">Edit</button>
+                            <!-- <button onclick="View()">View</button>
+                            <button onclick="Search()">Search</button> -->
+                            <button class="but-refresh" onclick="Refresh()">Refresh</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <div id="database"><a href="./inhtml.html"> Danh sách hiển thị phòng </a></div>
+			
+        
+        </div>
+    </div>
+
+
+    <script>
+
+
+         var danhsachphong = JSON.parse( localStorage.getItem('danhsachphong'));
+              if(danhsachphong == null)
+                danhsachphong = new Array();
+              console.log(danhsachphong);
+
+     
+            
+              
+            function taosanpham(){  
+				
+				
+                   var nodemaphong =document.getElementById('maphong');
+                   var maphong = parseInt(nodemaphong.value);
+                   nodemaphong.value='';
+  
+                   var nodetenphong = document.getElementById('tenphong');
+                   var tenphong=nodetenphong.value;
+                   nodetenphong.value='';
+
+                   var nodehinhanh =document.getElementById('hinhanh');
+                   var hinhanh= nodehinhanh.value;
+                   nodehinhanh.value='';
+                 
+                   var nodesize =document.getElementById('size');
+                   var size=parseInt(nodesize.value);
+                   nodesize.value='';
+
+                   var nodegia =document.getElementById('gia');
+                   var gia=parseInt(nodegia.value);
+                   nodegia.value='';
+
+			
+
+                   alert('tạo sản phẩm thành công!!!');
+
+
+
+                   var phong = taodoituongphong(maphong, tenphong, hinhanh, size, gia, null);
+    
+
+                // đưa sản phẩm vào danh sách
+
+                danhsachphong.push(phong);
+                console.log('danh sách các sản phẩm là: ');
+                // console.log(danhsachsanpham)
+
+
+                // lưu trữ danh sách sản phẩm xuống localstorgare
+                var jsondanhsachphong = JSON.stringify(danhsachphong)
+                localStorage.setItem('danhsachphong',jsondanhsachphong);
+                location.reload();
+
+            }
+    </script>
+
+	<!-- end main content -->
+	<!-- import script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="ad-room.js"></script>
+	<script src="ad-index.js"></script>
+
+	<!-- end import script -->
+</body>
+</html>

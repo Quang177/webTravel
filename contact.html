@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Open+Sans:wght@300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <title>Liên hệ</title>
+</head>
+
+    <body>
+
+        <!-- /// -->
+        <!-- header -->
+        <header>
+            <!-- menu -->
+            <div>
+                <div class="container">
+                    <div class="logo-header"> 
+                        <img src="./pic/luxury-resort-logo.png" alt="luxury resort">
+                    </div>
+                    <div>
+                        <ul id="menu-ul">
+                            <li class="closetop"><a href="./index.html">TRANG CHỦ</a></li>
+                            <li class="closetop"><a href="./room.html">PHÒNG</a></li>
+                            <li class="closetop"><a href="./sevice.html">DỊCH VỤ</a></li>
+                            <li class="closetop"><a href="./tour.html">TOUR</a></li>
+                            <li style="background-color: #dcb57e;" class="closetop"><a href="./contact.html">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- phím chỉ định -->
+        <div class="button-pro">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">
+                <i class="medium material-icons">arrow_drop_up</i>
+            </button>
+        </div>
+
+        <!-- phần thân trang web -->
+        <section class="centre">
+            <section>
+                <div class="body-header-text">
+                    <p>Liên hệ</p>
+                </div>
+                <div class="contact-flex">
+                    <!-- google map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.256042923737!2d106.05781401459491!3d20.942230396103298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a30555555555%3A0x39a8acd006ab8e69!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgUGjhuqFtIEvhu7kgVGh14bqtdCBIxrBuZyBZw6puLCBDxqEgc-G7nyAy!5e0!3m2!1svi!2s!4v1653210150026!5m2!1svi!2s" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        luxury resort 
+                    </div>
+                     
+                    <!-- các thông tin cần nhập -->
+                    <div class="info">
+                        <div class="form-title">
+                            <h4> Liên hệ </h4>
+                            <hr>
+                            <div class="form-input">
+                                <div class="form-input-items">
+                                    <label for=""> Họ và tên </label>
+                                    <input id="fullname" style="padding-left: 10px;" type="text" placeholder="Nhập họ tên của bạn">
+                                </div>
+
+                                <div class="form-input-items">
+                                    <label for="">Email</label>
+                                    <input id="mail" style="padding-left: 10px;" type="text" placeholder="Nhập địa chỉ email của bạn">
+                                </div>
+
+                                <div class="form-input-items">
+                                    <label for="">Tin nhắn</label>
+                                    <textarea id="mess" class="input-mess" style="padding-left: 10px; border-radius: 5px;" name="" id="" cols="60" rows="10" placeholder="Nhập tin nhắn của bạn"></textarea>
+                                </div>
+
+                                <button class="but" onclick="checkData()">GỬI TIN NHẮN</button>
+                            </div>
+                        </div>
+
+                        <!-- phần liên hệ trực tiếp -->
+                        <div class="form-info2">
+                            <h4>LIÊN HỆ TRỰC TIẾP VỚI CHÚNG TÔI</h4>
+                            <hr>
+                            <div class="form-info2-1">
+                                <i class="fa-solid fa-envelope"></i>
+                                THÔNG TIN CÓ TẠI BookYourTravel
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+        
+        <!-- phần chân trang web -->
+         <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container-col1">
+                    <div class="footer-container-col1-info">
+                        <h5>Book Your Travel LLC</h5>
+                        <p> <i class="medium material-icons">pin_drop</i> No. 147 Mai Dich, Cau Giay, Ha Noi</p>
+                        <p> <i class="medium material-icons">call</i> 0242 2420 777</p>
+                        <p> <i class="medium material-icons">contact_mail</i> info@webhotel.vn</p>
+                    </div>  
+                </div>
+                <div class="footer-container-col2">
+                    <div class="footer-container-col2-logo">
+                        <h5>Our Awards</h5>
+                        <img src="./pic/footer-awards-white.png" alt="Our Awards">
+                    </div>
+                </div>
+                <div class="footer-container-col3">
+                    <div class="footer-container-col3-input">
+                        <h5>Newsletter</h5>
+                        <form action="">
+                            <input class="footer-container-col3-input-email" type="email" placeholder="Enter your email" required>
+                            <input class="footer-container-col3-input-submit" type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-container-col4">
+                    <h5>Connect with us</h5> 
+                    <ul class="footer-container-col4-icons">
+                        <li><a title="facebook" href="#"></a> <i class="fa-brands fa-facebook-f"></i></li>
+                        <li><a title="twitter" href="#"></a> <i class="fa-brands fa-twitter"></i></li>
+                        <li><a title="instagram" href="#"></a> <i class="fa-brands fa-instagram"></i></li>
+                        <li><a title="github" href="#"></a> <i class="fa-brands fa-github"></i></li>
+                    </ul>
+                    
+                </div>
+                <div class="footer-container-col5">
+                    <div class="footer-container-col5-text">
+                        <h5>Hightlights</h5>
+                        <p>Term & Conditions</p>
+                        <p>Privacy policy</p>
+                    </div>
+                </div>
+                <div class="footer-container-col6">
+                    <div class="footer-container-col6-text">
+                        <h5>Luxury Resort</h5>
+                        <p>Possessing graceful curves designed to <br>
+                            harmonize with the surrounding streetscape, <br>
+                            Luxury Resort is sure to be the ideal stopover to <br>
+                            relax and arouse your senses.</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="final">               
+                <p class="final-copyright">
+                    Copyright © Luxury Resort <a href="#">The web by Me</a>
+                </p>
+                <p>
+                    <a>Privacy policy</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a>Term of use</a>
+                </p>
+            </div>
+        </footer>
+
+        <script language="javascript" src="mainjs.js"></script>
+    </body>
+</html>
